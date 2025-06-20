@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+
+// nom, prenom, age, couleurPeau, taille, cheveux;
+
+// avec la methode litteral
+
+
+
+
+
+ let Etudiant = {
+
+    prenom: 'Nogaye',
+
+    nom:'NDIAYE',
+
+    notes:[14,16,13],
+
+    // getter pour afficher nom complet et note
+
+
+
+    get AfficherInfos(){
+
+        return this.nom + ' '+ this.prenom;
+
+    },
+
+
+
+    // setter pour ajouter un nom
+
+    set EditNameEtudiant( val ){
+
+        this.nom = val;
+
+    },
+
+
+
+    
+
+};
+
+
+
+alert("infos etudiant: "+ Etudiant.nom + ' '+ Etudiant.prenom);
+
+
+
+alert("Moyenne etudiant: "+ Etudiant.moyenne);
+
+
+
+Etudiant.EditNameEtudiant = "SOW";
+
+
+
+alert("infos etudiant: "+ Etudiant.AfficherInfos);
+
+
+
+/*
+
+ exo : 
+
+ Créer un objet livre avec : titre, auteur, annee
+
+Ajouter :
+
+un getter description qui retourne une phrase comme :
+
+"Le livre 'titre' écrit par 'auteur'  en 'annee'"
+
+
+
+un setter modifierTitre pour changer le titre du livre
+
+
+
+Afficher la description, puis modifier le titre, puis réafficher la description.
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
